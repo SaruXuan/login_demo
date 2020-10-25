@@ -1,0 +1,14 @@
+body {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#registerStatus, #loginStatus, #errorStatus {
+    display: none;
+}
+
+#registerStatus.show, #loginStatus.show, #errorStatus.show {
+    display: block;
+}

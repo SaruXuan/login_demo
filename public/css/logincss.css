@@ -1,0 +1,11 @@
+body {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#pass-img {
+    width: 300px;
+    height: auto;
+}
