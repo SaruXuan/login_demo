@@ -14,6 +14,12 @@ if (empty($_POST['email']) || empty($_POST['password'])) {
     echo 'should not have blank';
     exit();
 }
+//email validation
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400);
+    echo 'please enter correct email format';
+    exit();
+}
 
 $sql = 'SELECT * FROM `member` WHERE `email`=:email AND `password`=:password';
 $statement = $pdo->prepare($sql);

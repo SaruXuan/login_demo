@@ -20,6 +20,8 @@
 <body>
     <img id="pass-img" src="src/verified.png" alt="pass">
     <h2 id="resultText">Welcome! <h2 id="memberName"><?= $_SESSION['email'] ?></h2></h2>
+    <a href="../todolist_demo/index.php">Todo List</a>
+    <a href="../calender_demo/public_html/index.php">Calendar</a>
     <button id="logout">logout</button>
 </body>
 </html>
